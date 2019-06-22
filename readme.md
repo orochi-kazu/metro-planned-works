@@ -19,8 +19,8 @@ Also check out the sub-project readme files :)
 
 ### Front-end
 
-This is a `create-react-app` codebase. It is intended to be deployed as a single-file front-end
-js bundle (as a statically rendered web app).
+This is a `create-react-app` codebase. It is intended to be deployed as an in-browser
+single-page app.
 
 ### Back-end
 

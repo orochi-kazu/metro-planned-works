@@ -7,13 +7,13 @@ The usual `npm install` and `npm start` :)
 ## Roadmap
 
 - [ ] Dev workflow
-  - [ ] Commitizen
-  - [ ] Linter
+  - [x] Commitizen
+  - [x] Linter
+  - [x] Husky
+  - [x] Pre-commit hook: lint & test
   - [ ] Unit tests
   - [ ] Functional tests
-  - [ ] Husky
-  - [ ] Pre-commit hook: lint & test
-  - [ ] Deploy script
+  - [x] Deploy script
   - [ ] CI for test, build, and deploy
 
 - [ ] MVP Features
@@ -23,16 +23,15 @@ The usual `npm install` and `npm start` :)
     - [ ] Determine single-line station range
     - [ ] Match alerts
     - [ ] List alerts with links to source webpage
-  - [ ] Typeahead on search inputs
-    - [ ] *breakdown*
-  - [ ] Current alert count
-    - [ ] *breakdown*
-  - [ ] Current alert count per line?
-    - [ ] *breakdown*
+  - [ ] Search routes, so people can share links
+    - [ ] *needs breakdown*
   - [ ] Calendar view of results
-    - [ ] *breakdown*
+    - [ ] *needs breakdown*
 
 - [ ] Stretch Features
+  - [ ] Typeahead on search inputs
+  - [ ] Current alert count
+  - [ ] Current alert count per line?
   - [ ] Indicator for pending alert ingestion
   - [ ] Automated detection of new alerts
   - [ ] Crowdsourced ingestion of new alerts
