@@ -1,0 +1,19 @@
+header, footer {
+  flex-shrink: 0;
+
+  color: white;
+  background-color: #323232;
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+span.icon {
+  color: #14cf00;
+}
+span.title {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
