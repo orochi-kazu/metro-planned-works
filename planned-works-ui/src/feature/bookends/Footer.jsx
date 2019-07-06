@@ -5,10 +5,10 @@ import { LastUpdate } from '../LastUpdate'
 import { Attrib } from '../Attrib'
 import './style.css'
 
-const Footer = () => (
+const Footer = ({ alerts, lastUpdate }) => (
   <footer>
-    <TotalAlerts />
-    <LastUpdate />
+    <TotalAlerts {...{ alerts }} />
+    <LastUpdate {...{ lastUpdate }} />
     <Attrib />
   </footer>
 )

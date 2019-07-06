@@ -4,13 +4,11 @@ import './style.css'
 
 const AlertsBadge = ({ count, type }) => (
   <span className={`alert ${type}`}>
-    {count}
+    {count || '?'}
   </span>
 )
 
-const cannedAlerts = { total: 20, ingested: 11, pending: 9 }
-
-const TotalAlerts = ({ alerts = cannedAlerts }) => (
+const TotalAlerts = ({ alerts }) => (
   <div>
     <AlertsBadge count={alerts.total} type='total' /> alerts
     (<AlertsBadge count={alerts.ingested} type='ingested' /> ingested,

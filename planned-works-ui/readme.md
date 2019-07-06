@@ -18,7 +18,7 @@ The usual `npm install` and `npm start` :)
 
 - [ ] MVP Features
   - [ ] Results list for search (by single-line start & end stations)
-    - [ ] Load JSON file
+    - [x] Load JSON file
     - [ ] Search inputs
     - [ ] Determine single-line station range
     - [ ] Match alerts
