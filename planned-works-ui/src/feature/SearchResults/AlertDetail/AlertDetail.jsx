@@ -20,7 +20,13 @@ const AlertDetail = ({ id, outages, link }) => (
   <div className='detail bordered'>
     <div className='alert-title'>
       <span>{id}</span>
-      <span><a href={link} target='_blank' rel='noopener noreferrer'>Metro</a></span>
+      <span>
+        <a
+          href={link}
+          target='_blank' // eslint-disable-line react/jsx-no-target-blank
+          rel='noopener'
+        >Metro</a>
+      </span>
     </div>
     <div>
       {outages ? outages.map((it, i) => <Outage {...it} key={i} />) : <Uningested />}
