@@ -4,7 +4,8 @@ const alerts = async ({ detailsClient, store }) => {
 
   return {
     lastUpdated: () => store.lastUpdated(),
-    alertCounts: () => store.alertCounts()
+    alertCounts: () => store.alertCounts(),
+    alertDetails: () => store.alerts()
   }
 }
 

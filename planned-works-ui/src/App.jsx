@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import { Header, Footer } from './feature/bookends'
 import { EmptyContent } from './feature/EmptyContent'
+import { SearchResults } from './feature/SearchResults'
 import './App.css'
 
 import { buildDepGraph } from './config'
@@ -12,7 +13,8 @@ class App extends Component {
     super(props)
     this.state = {
       alertCounts: {},
-      lastUpdated: 'Unknown'
+      lastUpdated: 'Unknown',
+      alertDetails: []
     }
 
     buildDepGraph().then(graph => {
@@ -20,7 +22,8 @@ class App extends Component {
 
       this.setState({
         lastUpdated: alertsManager.lastUpdated(),
-        alertCounts: alertsManager.alertCounts()
+        alertCounts: alertsManager.alertCounts(),
+        alertDetails: alertsManager.alertDetails()
       })
     })
   }
@@ -30,7 +33,10 @@ class App extends Component {
       <div className='App'>
         <Header />
         <div className='content'>
-          <EmptyContent />
+          {(this.state.alertDetails || []).length > 0
+            ? <SearchResults results={this.state.alertDetails} />
+            : <EmptyContent />
+          }
         </div>
         <Footer alerts={this.state.alertCounts} lastUpdate={this.state.lastUpdated} />
       </div>

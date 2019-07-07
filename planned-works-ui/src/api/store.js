@@ -15,7 +15,8 @@ const calculateAlertCounts = () => {
 const store = {
   save: alertDetails => { details = alertDetails },
   lastUpdated: () => details.releaseDate,
-  alertCounts: () => calculateAlertCounts()
+  alertCounts: () => calculateAlertCounts(),
+  alerts: () => details.alerts
 }
 
 export { store }
