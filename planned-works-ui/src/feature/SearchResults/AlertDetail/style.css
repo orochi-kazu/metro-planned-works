@@ -7,7 +7,7 @@
 
 .detail {
   display: inline-block;
-  border-color: #0073cf;
+  border-color: black;
   margin: 0.1rem;
 }
 .alert-title {
@@ -18,10 +18,10 @@
   justify-content: space-between;
 }
 .outage {
-  border-color: #77216f;
+  border-color: #0073cf;
   margin-bottom: 0.3em;
 }
 .uningested {
-  border-color: #c313a9;
+  border-color: #e17000;
   text-align: center;
 }

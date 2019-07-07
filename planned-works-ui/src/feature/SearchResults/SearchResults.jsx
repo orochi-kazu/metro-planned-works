@@ -1,7 +1,9 @@
 import React from 'react'
 
-import { AlertDetail } from './AlertDetail'
+import { Alert } from './Alert'
 
-const SearchResults = ({ results }) => results.map(it => <AlertDetail {...it} key={it.id} />)
+const SearchResults = ({ results, getAlertDetails }) => results.map(it => (
+  <Alert {...it} getAlertDetails={getAlertDetails} key={it.id} />
+))
 
 export { SearchResults }

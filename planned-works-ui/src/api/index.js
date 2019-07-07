@@ -1,4 +1,4 @@
-import { alertDetailsClient } from './alertDetailsClient'
+import { getJsonClient } from './getJsonClient'
 import { store } from './store'
 
-export { alertDetailsClient, store }
+export { getJsonClient, store }

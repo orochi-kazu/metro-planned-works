@@ -14,7 +14,8 @@ class App extends Component {
     this.state = {
       alertCounts: {},
       lastUpdated: 'Unknown',
-      alertDetails: []
+      alerts: [],
+      getAlertDetails: () => null
     }
 
     buildDepGraph().then(graph => {
@@ -23,7 +24,8 @@ class App extends Component {
       this.setState({
         lastUpdated: alertsManager.lastUpdated(),
         alertCounts: alertsManager.alertCounts(),
-        alertDetails: alertsManager.alertDetails()
+        alerts: alertsManager.alerts(),
+        getAlertDetails: alertsManager.alertDetails
       })
     })
   }
@@ -33,8 +35,13 @@ class App extends Component {
       <div className='App'>
         <Header />
         <div className='content'>
-          {(this.state.alertDetails || []).length > 0
-            ? <SearchResults results={this.state.alertDetails} />
+          {(this.state.alerts || []).length > 0
+            ? (
+              <SearchResults
+                results={this.state.alerts}
+                getAlertDetails={this.state.getAlertDetails}
+              />
+            )
             : <EmptyContent />
           }
         </div>

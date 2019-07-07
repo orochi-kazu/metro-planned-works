@@ -1,0 +1,23 @@
+.alert-summary {
+  display: inline-block;
+  border-color: #c313a9;
+  margin: 0.1rem;
+}
+
+.bordered {
+  border-radius: 0.4em;
+  border-width: 0.1em;
+  border-style: solid;
+  padding: 0 0.3em;
+}
+
+div.alert-summary-title {
+  margin: 0.5em 0;
+  padding: 0 0.4em;
+
+  display: flex;
+  justify-content: space-between;
+}
+span.alert-summary-title {
+  font-weight: bold;
+}

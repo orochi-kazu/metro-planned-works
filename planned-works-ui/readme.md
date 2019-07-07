@@ -22,7 +22,7 @@ The usual `npm install` and `npm start` :)
     - [ ] Search inputs
     - [ ] Determine single-line station range
     - [ ] Match alerts
-    - [ ] List alerts with links to source webpage
+    - [x] List alerts with links to source webpage
   - [ ] Search routes, so people can share links
     - [ ] *needs breakdown*
   - [ ] Calendar view of results

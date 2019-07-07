@@ -10,7 +10,7 @@ const AlertsBadge = ({ count, type }) => (
 
 const TotalAlerts = ({ alerts }) => (
   <div>
-    <AlertsBadge count={alerts.total} type='total' /> alerts
+    <AlertsBadge count={alerts.total} type='total' /> alert details
     (<AlertsBadge count={alerts.ingested} type='ingested' /> ingested,
     {` `}<AlertsBadge count={alerts.pending} type='pending' /> pending)
   </div>

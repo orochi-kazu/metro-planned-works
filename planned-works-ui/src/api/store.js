@@ -1,22 +1,29 @@
+let alerts = []
+
 let details = {
-  fetchDate: 'Unknown',
-  releaseDate: 'Unknown',
-  alerts: []
+  alerts: {},
+  fetchDate: '',
+  releaseDate: ''
 }
 
 const calculateAlertCounts = () => {
-  const total = details.alerts.length
-  const ingested = details.alerts.filter(it => it.outages).length
+  const keys = Object.keys(details.alerts)
+  const total = keys.length
+  const ingested = keys.map(k => details.alerts[k]).filter(it => it.outages).length
   const pending = total - ingested
 
   return { total, ingested, pending }
 }
 
 const store = {
-  save: alertDetails => { details = alertDetails },
-  lastUpdated: () => details.releaseDate,
+  save: ({ healthboardAlerts, alertDetails }) => {
+    alerts = healthboardAlerts
+    details = alertDetails
+  },
+  alerts: () => alerts,
   alertCounts: () => calculateAlertCounts(),
-  alerts: () => details.alerts
+  alertDetails: id => details.alerts[id],
+  lastUpdated: () => details.releaseDate
 }
 
 export { store }
