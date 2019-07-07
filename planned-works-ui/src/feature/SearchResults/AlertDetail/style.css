@@ -9,6 +9,7 @@
   display: inline-block;
   border-color: black;
   margin: 0.1rem;
+  max-width: 20em;
 }
 .alert-title {
   margin: 0.5em 0;
@@ -24,4 +25,12 @@
 .uningested {
   border-color: #e17000;
   text-align: center;
+}
+.outage-desc {
+  color: #aaa;
+  font-style: italic;
+  margin-bottom: 0.2em;
+}
+.nowrap {
+  white-space: nowrap;
 }

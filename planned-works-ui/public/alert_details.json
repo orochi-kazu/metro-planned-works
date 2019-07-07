@@ -6,7 +6,10 @@
       "id": "273667",
       "outages": [
         {
-          "area": null,
+          "area": {
+            "desc": "between Parliament, Flinders Street and Sandringham",
+            "stations": ["Sandringham","Hampton","Brighton Beach","Middle Brighton","North Brighton","Gardenvale","Elsternwick","Ripponlea","Balaclava","Windsor","Prahran","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
           "from": {
             "desc": "8pm Friday 14 June",
             "epoch": 0,
@@ -18,7 +21,10 @@
             "iso": "2019-06-15T04:00"
           }
         }, {
-          "area": null,
+          "area": {
+            "desc": "between Parliament, Flinders Street and Sandringham",
+            "stations": ["Sandringham","Hampton","Brighton Beach","Middle Brighton","North Brighton","Gardenvale","Elsternwick","Ripponlea","Balaclava","Windsor","Prahran","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
           "from": {
             "desc": "8pm Sunday 16 June",
             "epoch": 0,
@@ -37,7 +43,10 @@
       "id": "274143",
       "outages": [
         {
-          "area": null,
+          "area": {
+            "desc": "direct to and from Flinders Street Station, not via the City Loop",
+            "stations": ["Parliament","Melbourne Central","Flagstaff","Southern Cross"]
+          },
           "from": {
             "desc": "First train Sunday 16 June",
             "epoch": 0,
@@ -56,7 +65,10 @@
       "id": "275019",
       "outages": [
         {
-          "area": null,
+          "area": {
+            "desc": "between South Yarra and Sandringham",
+            "stations": ["Sandringham","Hampton","Brighton Beach","Middle Brighton","North Brighton","Gardenvale","Elsternwick","Ripponlea","Balaclava","Windsor","Prahran"]
+          },
           "from": {
             "desc": "9pm Friday 21 June",
             "epoch": 0,
@@ -75,7 +87,10 @@
       "id": "273938",
       "outages": [
         {
-          "area": null,
+          "area": {
+            "desc": "between Parliament, Flinders Street and Sandringham",
+            "stations": ["Sandringham","Hampton","Brighton Beach","Middle Brighton","North Brighton","Gardenvale","Elsternwick","Ripponlea","Balaclava","Windsor","Prahran","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
           "from": {
             "desc": "12.45am Saturday 6 July",
             "epoch": 0,
@@ -88,7 +103,10 @@
           }
         },
         {
-          "area": null,
+          "area": {
+            "desc": "between Parliament, Flinders Street and Sandringham",
+            "stations": ["Sandringham","Hampton","Brighton Beach","Middle Brighton","North Brighton","Gardenvale","Elsternwick","Ripponlea","Balaclava","Windsor","Prahran","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
           "from": {
             "desc": "12.45am Saturday 13 July",
             "epoch": 0,
@@ -107,7 +125,10 @@
       "id": "274823",
       "outages": [
         {
-          "area": null,
+          "area": {
+            "desc": "direct to and from Flinders Street Station, not via the City Loop",
+            "stations": ["Flagstaff","Melbourne Central","Parliament"]
+          },
           "from": {
             "desc": "Saturday 15 June",
             "epoch": 0,
@@ -126,7 +147,10 @@
       "id": "273704",
       "outages": [
         {
-          "area": null,
+          "area": {
+            "desc": "direct to and from Flinders Street Station, not via the City Loop",
+            "stations": ["Flagstaff","Melbourne Central","Parliament"]
+          },
           "from": {
             "desc": "8.40pm Monday 17 June",
             "epoch": 0,
@@ -138,7 +162,10 @@
             "iso": "2019-06-18T00:05"
           }
         }, {
-          "area": null,
+          "area": {
+            "desc": "direct to and from Flinders Street Station, not via the City Loop",
+            "stations": ["Flagstaff","Melbourne Central","Parliament"]
+          },
           "from": {
             "desc": "8.40pm Tuesday 18 June",
             "epoch": 0,
@@ -150,7 +177,10 @@
             "iso": "2019-06-19T00:05"
           }
         }, {
-          "area": null,
+          "area": {
+            "desc": "direct to and from Flinders Street Station, not via the City Loop",
+            "stations": ["Flagstaff","Melbourne Central","Parliament"]
+          },
           "from": {
             "desc": "8.40pm Wednesday 19 June",
             "epoch": 0,
@@ -177,7 +207,10 @@
       "id": "273677",
       "outages": [
         {
-          "area": null,
+          "area": {
+            "desc": "between Parliament, Flinders Street and Caulfield",
+            "stations": ["Malvern","Armadale","Toorak","Hawksburn","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
           "from": {
             "desc": "8.10pm Friday 14 June",
             "epoch": 0,
@@ -208,7 +241,10 @@
       "id": "273917",
       "outages": [
         {
-          "area": "Between Flinders Street and Caulfield",
+          "area": {
+            "desc": "Between Flinders Street and Caulfield",
+            "stations": ["Malvern","Armadale","Toorak","Hawksburn","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
           "from": {
             "desc": "12.45am Saturday 6 July",
             "epoch": 0,
@@ -220,7 +256,10 @@
             "iso": "2019-07-13T03:00"
           }
         }, {
-          "area": "Between Frankston and Stony Point",
+          "area": {
+            "desc": "Between Frankston and Stony Point",
+            "stations": ["Stony Point","Crib Point","Morradoo","Bittern","Hastings","Tyabb","Somerville","Baxter","Leawarra"]
+          },
           "from": {
             "desc": "12.45am Saturday 6 July",
             "epoch": 0,
@@ -232,7 +271,10 @@
             "iso": "2019-07-13T03:00"
           }
         }, {
-          "area": "Between Flinders Street and Moorabbin",
+          "area": {
+            "desc": "Between Flinders Street and Moorabbin",
+            "stations": ["Patterson","Bentleigh","McKinnon","Ormond","Glenhuntly","Caulfield","Malvern","Armadale","Toorak","Hawksburn","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
           "from": {
             "desc": "12.45am Saturday 6 July",
             "epoch": 0,
@@ -244,7 +286,10 @@
             "iso": "2019-07-13T03:00"
           }
         }, {
-          "area": "Between Mordialloc and Stony Point",
+          "area": {
+            "desc": "Between Mordialloc and Stony Point",
+            "stations": ["Stony Point","Crib Point","Morradoo","Bittern","Hastings","Tyabb","Somerville","Baxter","Leawarra","Frankston","Kananook","Seaford","Carrum","Bonbeach","Chelsea","Edithvale","Aspendale"]
+          },
           "from": {
             "desc": "8pm Friday 19 July",
             "epoch": 0,
@@ -256,7 +301,10 @@
             "iso": "2019-07-29T03:00"
           }
         }, {
-          "area": "Between Moorabbin and Frankston",
+          "area": {
+            "desc": "Between Moorabbin and Frankston",
+            "stations": ["Frankston","Kananook","Seaford","Carrum","Bonbeach","Chelsea","Edithvale","Aspendale","Mordialloc","Parkdale","Mentone","Cheltenham","Southland","Highett"]
+          },
           "from": {
             "desc": "8pm Sunday 21 July",
             "epoch": 0,
@@ -268,7 +316,10 @@
             "iso": "2019-07-22T03:00"
           }
         }, {
-          "area": "Between Moorabbin and Frankston",
+          "area": {
+            "desc": "Between Moorabbin and Frankston",
+            "stations": ["Frankston","Kananook","Seaford","Carrum","Bonbeach","Chelsea","Edithvale","Aspendale","Mordialloc","Parkdale","Mentone","Cheltenham","Southland","Highett"]
+          },
           "from": {
             "desc": "8pm Monday 22 July",
             "epoch": 0,
@@ -280,7 +331,10 @@
             "iso": "2019-07-23T03:00"
           }
         }, {
-          "area": "Between Moorabbin and Frankston",
+          "area": {
+            "desc": "Between Moorabbin and Frankston",
+            "stations": ["Frankston","Kananook","Seaford","Carrum","Bonbeach","Chelsea","Edithvale","Aspendale","Mordialloc","Parkdale","Mentone","Cheltenham","Southland","Highett"]
+          },
           "from": {
             "desc": "8pm Tuesday 23 July",
             "epoch": 0,
@@ -292,7 +346,10 @@
             "iso": "2019-07-24T03:00"
           }
         }, {
-          "area": "Between Moorabbin and Frankston",
+          "area": {
+            "desc": "Between Moorabbin and Frankston",
+            "stations": ["Frankston","Kananook","Seaford","Carrum","Bonbeach","Chelsea","Edithvale","Aspendale","Mordialloc","Parkdale","Mentone","Cheltenham","Southland","Highett"]
+          },
           "from": {
             "desc": "8pm Wednesday 24 July",
             "epoch": 0,
@@ -315,7 +372,10 @@
       "id": "273681",
       "outages": [
         {
-          "area": null,
+          "area": {
+            "desc": "between Parliament and Clifton Hill",
+            "stations": ["Victoria Park","Collingwood","North Richmond","West Richmond","Jolimont-MCG","Parliament","Melbourne Central","Flagstaff","Southern Cross","Flinders Street"]
+          },
           "from": {
             "desc": "8.20pm Monday 17 June",
             "epoch": 0,
@@ -327,7 +387,10 @@
             "iso": "2019-06-18T03:00"
           }
         }, {
-          "area": null,
+          "area": {
+            "desc": "between Parliament and Clifton Hill",
+            "stations": ["Victoria Park","Collingwood","North Richmond","West Richmond","Jolimont-MCG","Parliament","Melbourne Central","Flagstaff","Southern Cross","Flinders Street"]
+          },
           "from": {
             "desc": "8.20pm Tuesday 18 June",
             "epoch": 0,
@@ -339,7 +402,10 @@
             "iso": "2019-06-19T03:00"
           }
         }, {
-          "area": null,
+          "area": {
+            "desc": "between Parliament and Clifton Hill",
+            "stations": ["Victoria Park","Collingwood","North Richmond","West Richmond","Jolimont-MCG","Parliament","Melbourne Central","Flagstaff","Southern Cross","Flinders Street"]
+          },
           "from": {
             "desc": "8.20pm Wednesday 19 June",
             "epoch": 0,
@@ -366,7 +432,10 @@
       "id": "273697",
       "outages": [
         {
-          "area": null,
+          "area": {
+            "desc": "between North Melbourne and Upfield",
+            "stations": ["Upfield","Gowrie","Fawkner","Merlynston","Batman","Coburg","Moreland","Anstey","Brunswick","Jewell","Royal Park","Flemington Bridge","Macaulay","Melbourne Central","North Melbourne"]
+          },
           "from": {
             "desc": "8.25pm Monday 17 June",
             "epoch": 0,
@@ -378,7 +447,10 @@
             "iso": "2019-06-18T03:00"
           }
         }, {
-          "area": null,
+          "area": {
+            "desc": "between North Melbourne and Upfield",
+            "stations": ["Upfield","Gowrie","Fawkner","Merlynston","Batman","Coburg","Moreland","Anstey","Brunswick","Jewell","Royal Park","Flemington Bridge","Macaulay","Melbourne Central","North Melbourne"]
+          },
           "from": {
             "desc": "8.25pm Tuesday 18 June",
             "epoch": 0,
@@ -390,7 +462,10 @@
             "iso": "2019-06-19T03:00"
           }
         }, {
-          "area": null,
+          "area": {
+            "desc": "between North Melbourne and Upfield",
+            "stations": ["Upfield","Gowrie","Fawkner","Merlynston","Batman","Coburg","Moreland","Anstey","Brunswick","Jewell","Royal Park","Flemington Bridge","Macaulay","Melbourne Central","North Melbourne"]
+          },
           "from": {
             "desc": "8.25pm Wednesday 19 June",
             "epoch": 0,
@@ -409,7 +484,10 @@
       "id": "273718",
       "outages": [
         {
-          "area": null,
+          "area": {
+            "desc": "direct to and from Burnley Station on the Belgrave, Lilydale and Alamein lines; direct to and from Flinders Street Station on the Glen Waverley line",
+            "stations": ["East Richmond","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
           "from": {
             "desc": "8.40pm Monday 17 June",
             "epoch": 0,
@@ -421,7 +499,10 @@
             "iso": "2019-06-18T00:05"
           }
         }, {
-          "area": null,
+          "area": {
+            "desc": "direct to and from Burnley Station on the Belgrave, Lilydale and Alamein lines; direct to and from Flinders Street Station on the Glen Waverley line",
+            "stations": ["East Richmond","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
           "from": {
             "desc": "8.40pm Tuesday 18 June",
             "epoch": 0,
@@ -433,7 +514,10 @@
             "iso": "2019-06-19T00:05"
           }
         }, {
-          "area": null,
+          "area": {
+            "desc": "direct to and from Burnley Station on the Belgrave, Lilydale and Alamein lines; direct to and from Flinders Street Station on the Glen Waverley line",
+            "stations": ["East Richmond","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
           "from": {
             "desc": "8.40pm Wednesday 19 June",
             "epoch": 0,

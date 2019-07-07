@@ -10,7 +10,6 @@ const idListToMap = list => Object.fromEntries(
 
 const convertAlerts = it => ({
   id: it.id,
-  alerts: it.alerts,
   line: it.line_name,
   plannedWorks: it.planned_works_list
 })
