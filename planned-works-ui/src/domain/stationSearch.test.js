@@ -11,6 +11,34 @@ const stations = {
   doubleJunction: { ...kengusLine, ...crunkstonia, ...malamaine }
 }
 
+describe('anyIntersection', () => {
+  const subject = __test__.anyIntersection
+
+  it('matches intersecting sets', () => {
+    // given
+    const a = ['Janty', 'Klorng', 'Lindotay']
+    const b = ['Lindotay', 'Vistul', 'Ufreatto']
+
+    // when
+    const intersect = subject(a, b)
+
+    // then
+    expect(intersect).toBe(true)
+  })
+
+  it(`doesn't matches non-intersecting sets`, () => {
+    // given
+    const a = ['Janty', 'Klorng']
+    const b = ['Lindotay', 'Vistul', 'Ufreatto']
+
+    // when
+    const intersect = subject(a, b)
+
+    // then
+    expect(intersect).toBe(false)
+  })
+})
+
 describe('findLinesWithContiguousRange', () => {
   const subject = __test__.findLinesWithContiguousRange
 
@@ -40,7 +68,7 @@ describe('findLinesWithContiguousRange', () => {
     expect(result.lines).toBeUndefined()
   })
 
-  it('errors with unfound stations', () => {
+  it('errors with unfound station b', () => {
     // given
     const a = 'Floob'
     const b = 'Klorng'
@@ -53,7 +81,7 @@ describe('findLinesWithContiguousRange', () => {
     expect(result.lines).toBeUndefined()
   })
 
-  it('errors with unfound stations', () => {
+  it('errors with unfound station a', () => {
     // given
     const a = 'Floob'
     const b = 'Klorng'
@@ -63,6 +91,19 @@ describe('findLinesWithContiguousRange', () => {
 
     // then
     expect(result.error).toEqual(`couldn't find station "Klorng"`)
+    expect(result.lines).toBeUndefined()
+  })
+
+  it('errors with mismatched lines', () => {
+    // given
+    const a = 'Smorch'
+    const b = 'Ufreatto'
+
+    // when
+    const result = subject(stations.noOverlap, b, a)
+
+    // then
+    expect(result.error).toEqual(`these aren't on the same line`)
     expect(result.lines).toBeUndefined()
   })
 

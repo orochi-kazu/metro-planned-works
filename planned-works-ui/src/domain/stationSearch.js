@@ -1,3 +1,6 @@
+const anyIntersection = (aList, bList) =>
+  aList.reduce((acc, station) => acc || bList.includes(station), false)
+
 const zip = (aList, bList) => aList.map((a, i) => [a, bList[i]])
 
 const equalLists = (aList, bList) =>
@@ -34,6 +37,10 @@ const findLinesWithContiguousRange = (stationsByLineName, a, b) => {
     return searchResult(aLines)
   }
 
+  if (!anyIntersection(aLines, bLines)) {
+    return searchError(`these aren't on the same line`)
+  }
+
   const [short, long] = aLines.length < bLines.length ? [aLines, bLines] : [bLines, aLines]
   if (strictSubset(short, long)) {
     return searchResult(short)
@@ -57,6 +64,7 @@ const stationSearch = store => ({
   intersectsCityLoop: (a, b) => intersectsCityLoop(store.cityLoopStations(), a, b)
 })
 const __test__ = {
+  anyIntersection,
   findLinesWith,
   findLinesWithContiguousRange,
   intersectsCityLoop
