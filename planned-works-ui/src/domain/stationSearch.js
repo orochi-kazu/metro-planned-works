@@ -60,8 +60,27 @@ const findLinesWith = (stationsByLineName, a) =>
       stations.includes(a) ? [...acc, line] : acc
     ), [])
 
-const stationSearch = store => ({
-  intersectsCityLoop: (a, b) => intersectsCityLoop(store.cityLoopStations(), a, b)
+const callbacks = {
+  intersectsCityLoop: [],
+  linesForStations: [],
+  stationRangeForStations: []
+}
+
+const stationSearch = ({ store }) => ({
+  registerFor: {
+    intersectsCityLoop: cb => { callbacks.intersectsCityLoop.push(cb) },
+    linesForStations: cb => { callbacks.linesForStations.push(cb) },
+    stationRangeForStations: cb => { callbacks.stationRangeForStations.push(cb) }
+  },
+  intersectsCityLoop: (a, b) => {
+    const result = intersectsCityLoop(store.cityLoopStations(), a, b)
+    callbacks.intersectsCityLoop.forEach(cb => { cb(result) })
+  },
+  linesForStations: (a, b) => {
+    const result = findLinesWithContiguousRange(store.stationsByLineName(), a, b)
+    callbacks.linesForStations.forEach(cb => { cb(result) })
+  },
+  stationRangeForStations: (a, b) => {}
 })
 const __test__ = {
   anyIntersection,

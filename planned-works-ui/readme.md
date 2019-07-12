@@ -11,7 +11,7 @@ The usual `npm install` and `npm start` :)
   - [x] Linter
   - [x] Husky
   - [x] Pre-commit hook: lint & test
-  - [ ] Unit tests
+  - [x] Unit tests
   - [ ] Functional tests
   - [x] Deploy script
   - [ ] CI for test, build, and deploy

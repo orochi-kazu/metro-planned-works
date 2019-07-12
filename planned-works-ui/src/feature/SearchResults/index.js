@@ -1,3 +1,4 @@
 import { SearchResults } from './SearchResults'
+import { SearchInfo } from './SearchInfo'
 
-export { SearchResults }
+export { SearchResults, SearchInfo }

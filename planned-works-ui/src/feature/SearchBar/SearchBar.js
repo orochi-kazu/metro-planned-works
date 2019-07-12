@@ -41,6 +41,7 @@ class SearchBar extends Component {
     event.preventDefault()
     const { src, dst } = this.state
     window.history.pushState(null, '', `?src=${src}&dst=${dst}`)
+    this.props.search(src, dst)
   }
 
   render () {

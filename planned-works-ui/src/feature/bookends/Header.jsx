@@ -3,10 +3,10 @@ import React from 'react'
 import { SearchBar } from '../SearchBar'
 import './style.css'
 
-const Header = () => (
+const Header = ({ search }) => (
   <header>
     <span className='title'><span className='icon'>⚠</span> Legible Works</span>
-    <SearchBar />
+    <SearchBar search={search} />
   </header>
 )
 
