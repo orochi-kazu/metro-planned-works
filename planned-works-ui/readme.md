@@ -19,12 +19,13 @@ The usual `npm install` and `npm start` :)
 - [ ] MVP Features
   - [ ] Results list for search (by single-line start & end stations)
     - [x] Load JSON file
-    - [ ] Search inputs
-    - [ ] Determine single-line station range
+    - [x] Search inputs
+    - [x] Determine single-line station range
     - [ ] Match alerts
     - [x] List alerts with links to source webpage
-  - [ ] Search routes, so people can share links
-    - [ ] *needs breakdown*
+  - [x] Search query params, so people can share links
+    - [x] Update query on submit
+    - [x] Fill search fields from query on load
   - [ ] Calendar view of results
     - [ ] *needs breakdown*
 
