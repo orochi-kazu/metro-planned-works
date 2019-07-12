@@ -1,10 +1,3 @@
-.bordered {
-  border-radius: 0.4em;
-  border-width: 0.1em;
-  border-style: solid;
-  padding: 0 0.3em;
-}
-
 .detail {
   display: inline-block;
   border-color: black;

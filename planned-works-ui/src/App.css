@@ -25,3 +25,13 @@ a[target="_blank"]::after {
   content: url('./external-link.svg');
   color: #70d0ff;
 }
+
+.bordered {
+  border-width: 0.1em;
+  border-style: solid;
+  padding: 0 0.3em;
+}
+
+.radius-m {
+  border-radius: 0.4em;
+}

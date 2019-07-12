@@ -1,10 +1,4 @@
-span.alert {
-  font-weight: bold;
-  border-radius: 0.4em;
-  border-width: 0.1em;
-  border-style: solid;
-  padding: 0 0.3em;
-}
+span.alert { font-weight: bold; }
 
 span.total    { border-color: #e01414; }
 span.ingested { border-color: #0073cf; }

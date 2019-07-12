@@ -3,13 +3,13 @@ import React from 'react'
 import './style.css'
 
 const Uningested = () => (
-  <div className='outage uningested bordered'>
+  <div className='outage uningested bordered radius-m'>
     Pending
   </div>
 )
 
 const Outage = ({ area, from, to }) => (
-  <div className='outage bordered'>
+  <div className='outage bordered radius-m'>
     <div className='outage-desc'>&quot;{area.desc}&quot;</div>
     <div>Starts: {from.iso}</div>
     <div>Ends: {to.iso}</div>
@@ -17,7 +17,7 @@ const Outage = ({ area, from, to }) => (
 )
 
 const AlertDetail = ({ id, title, outages, link }) => (
-  <div className='detail bordered'>
+  <div className='detail bordered radius-m'>
     <div className='alert-title'>
       <span>
         {title}

@@ -15,7 +15,7 @@ const Alert = ({ id, alerts, line, plannedWorks, getAlertDetails }) => {
   }
   const getDetail = detailById(getAlertDetails)
   return (
-    <div className='alert-summary bordered'>
+    <div className='alert-summary bordered radius-m'>
       <div className='alert-summary-title'>
         <span className='alert-summary-title'>{line || 'Unnamed line'}</span>
         {line ? '' : <span>&nbsp;({id})</span>}

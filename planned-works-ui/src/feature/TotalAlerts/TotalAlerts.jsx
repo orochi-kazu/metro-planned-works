@@ -3,7 +3,7 @@ import React from 'react'
 import './style.css'
 
 const AlertsBadge = ({ count, type }) => (
-  <span className={`alert ${type}`}>
+  <span className={`alert ${type} bordered radius-m`}>
     {count || '?'}
   </span>
 )
