@@ -45,6 +45,8 @@ class App extends Component {
 
       this.loadQuerySearch()
     })
+
+    window.onpopstate = this.loadQuerySearch
   }
 
   loadQuerySearch () {
