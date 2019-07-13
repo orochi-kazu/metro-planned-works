@@ -21,12 +21,16 @@ class SearchBar extends Component {
   constructor (props) {
     super(props)
 
-    const params = new URL(window.location).searchParams
-    const [src, dst] = ['src', 'dst'].map(it => params.get(it) || '')
+    const { src, dst } = this.props
     this.state = { src, dst }
 
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+  }
+
+  componentWillReceiveProps (props) {
+    const { src, dst } = props
+    this.setState({ src, dst })
   }
 
   handleChange (key) {

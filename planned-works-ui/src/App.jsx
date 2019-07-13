@@ -6,13 +6,6 @@ import { SearchResults, SearchInfo } from './feature/SearchResults'
 import './App.css'
 
 import { buildDepGraph } from './config'
-let alertsManager = null
-
-const hooks = [
-  'intersectsCityLoop',
-  'linesForStations',
-  'stationRangeForStations'
-]
 
 class App extends Component {
   constructor (props) {
@@ -22,31 +15,31 @@ class App extends Component {
       lastUpdated: 'Unknown',
       alerts: [],
       getAlertDetails: () => null,
-      search: null
+      search: null,
+      searchInfo: null,
+      src: '',
+      dst: ''
     }
 
-    this.receiveResult = this.receiveResult.bind(this)
-    this.search = this.search.bind(this)
     this.loadQuerySearch = this.loadQuerySearch.bind(this)
+    this.search = this.search.bind(this)
 
+    window.onpopstate = this.loadQuerySearch
+  }
+
+  componentDidMount () {
     buildDepGraph().then(graph => {
-      hooks.forEach(it => {
-        graph.domain.search.registerFor[it](this.receiveResult(it))
-      })
-
-      alertsManager = graph.domain.alerts
+      const alertsManager = graph.domain.alerts
       this.setState({
         lastUpdated: alertsManager.lastUpdated(),
         alertCounts: alertsManager.alertCounts(),
         // alerts: alertsManager.alerts(),
         getAlertDetails: alertsManager.alertDetails,
-        search: graph.domain.search
+        search: graph.domain.search.search
       })
 
       this.loadQuerySearch()
     })
-
-    window.onpopstate = this.loadQuerySearch
   }
 
   loadQuerySearch () {
@@ -57,34 +50,18 @@ class App extends Component {
     }
   }
 
-  receiveResult (key) {
-    return result => {
-      this.setState({
-        [key]: result
-      })
-    }
-  }
-
   search (a, b) {
-    hooks.forEach(it => {
-      this.state.search[it](a, b)
-    })
+    this.setState({ src: a, dst: b })
+    const searchInfo = this.state.search(a, b)
+    this.setState({ searchInfo })
   }
 
   render () {
     return (
       <div className='App'>
-        <Header search={this.search} />
+        <Header search={this.search} src={this.state.src} dst={this.state.dst} />
         <div className='content'>
-          {this.state.linesForStations ? (
-            <SearchInfo
-              cityLoop={this.state.intersectsCityLoop}
-              lines={this.state.linesForStations}
-              stations={this.state.stationRangeForStations}
-            />
-          ) : (
-            null
-          )}
+          {this.state.searchInfo ? <SearchInfo {...this.state.searchInfo} /> : null}
           {(this.state.alerts || []).length > 0 ? (
             <SearchResults
               alerts={this.state.alerts}

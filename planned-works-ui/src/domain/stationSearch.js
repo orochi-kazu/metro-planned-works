@@ -60,33 +60,43 @@ const findLinesWith = (stationsByLineName, a) =>
       stations.includes(a) ? [...acc, line] : acc
     ), [])
 
-const callbacks = {
-  intersectsCityLoop: [],
-  linesForStations: [],
-  stationRangeForStations: []
+const stationRange = (stationsByLineName, line, a, b) => {
+  const lineStations = stationsByLineName[line]
+  const iA = lineStations.indexOf(a)
+  const iB = lineStations.indexOf(b)
+
+  if (iA < 0 || iB < 0) {
+    return []
+  }
+
+  const [start, end] = iA < iB ? [iA, iB] : [iB, iA]
+  const stations = lineStations.slice(start, end + 1)
+  return (stations[0] === a)
+    ? stations
+    : stations.reverse()
 }
 
 const stationSearch = ({ store }) => ({
-  registerFor: {
-    intersectsCityLoop: cb => { callbacks.intersectsCityLoop.push(cb) },
-    linesForStations: cb => { callbacks.linesForStations.push(cb) },
-    stationRangeForStations: cb => { callbacks.stationRangeForStations.push(cb) }
-  },
-  intersectsCityLoop: (a, b) => {
-    const result = intersectsCityLoop(store.cityLoopStations(), a, b)
-    callbacks.intersectsCityLoop.forEach(cb => { cb(result) })
-  },
-  linesForStations: (a, b) => {
-    const result = findLinesWithContiguousRange(store.stationsByLineName(), a, b)
-    callbacks.linesForStations.forEach(cb => { cb(result) })
-  },
-  stationRangeForStations: (a, b) => {}
+  search: (a, b) => {
+    const cityLoop = intersectsCityLoop(store.cityLoopStations(), a, b)
+    const linesResult = findLinesWithContiguousRange(store.stationsByLineName(), a, b)
+    if (linesResult.error) {
+      return linesResult
+    }
+    const lines = linesResult.lines
+    const line = lines[0]
+    const stations = line ? stationRange(store.stationsByLineName(), line, a, b) : []
+    return {
+      cityLoop, lines, stations
+    }
+  }
 })
 const __test__ = {
   anyIntersection,
   findLinesWith,
   findLinesWithContiguousRange,
-  intersectsCityLoop
+  intersectsCityLoop,
+  stationRange
 }
 
 export { stationSearch, __test__ }

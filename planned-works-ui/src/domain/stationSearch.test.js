@@ -237,3 +237,47 @@ describe('intersectsCityLoop', () => {
     expect(match).toBe(false)
   })
 })
+
+describe('stationRange', () => {
+  const subject = __test__.stationRange
+  const lines = stations.simpleOverlap
+
+  it('yields a continuous range', () => {
+    // given
+    const line = 'Kengus Line'
+    const a = 'Fenquich'
+    const b = 'Ounzef'
+
+    // when
+    const match = subject(lines, line, a, b)
+
+    // then
+    expect(match).toEqual(['Fenquich', 'Pung', 'Ounzef'])
+  })
+
+  it('yields a continuous range with directionality', () => {
+    // given
+    const line = 'Kengus Line'
+    const a = 'Ounzef'
+    const b = 'Fenquich'
+
+    // when
+    const match = subject(lines, line, a, b)
+
+    // then
+    expect(match).toEqual(['Ounzef', 'Pung', 'Fenquich'])
+  })
+
+  it('yields an empty range on error', () => {
+    // given
+    const line = 'Kengus Line'
+    const a = 'Fenquich'
+    const b = 'Hirnex'
+
+    // when
+    const match = subject(lines, line, a, b)
+
+    // then
+    expect(match).toEqual([])
+  })
+})
