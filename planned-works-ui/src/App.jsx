@@ -11,8 +11,9 @@ class App extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      alertCounts: {},
+      lastSync: 'Unknown',
       lastUpdated: 'Unknown',
+      alertCounts: {},
       alerts: [],
       alertsForLinesStations: () => null,
       getAlertDetails: () => null,
@@ -33,6 +34,7 @@ class App extends Component {
       const alertsManager = graph.domain.alerts
       this.setState({
         lastUpdated: alertsManager.lastUpdated(),
+        lastSync: alertsManager.lastSync(),
         alertCounts: alertsManager.alertCounts(),
         // alerts: alertsManager.alerts(),
         getAlertDetails: alertsManager.alertDetails,
@@ -74,7 +76,11 @@ class App extends Component {
             <EmptyContent />
           )}
         </div>
-        <Footer alerts={this.state.alertCounts} lastUpdate={this.state.lastUpdated} />
+        <Footer
+          alerts={this.state.alertCounts}
+          lastSync={this.state.lastSync}
+          lastUpdate={this.state.lastUpdated}
+        />
       </div>
     )
   }

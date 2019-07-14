@@ -53,6 +53,7 @@ const alerts = async ({ healthboardClient, detailsClient, store }) => {
     alertCounts: () => store.alertCounts(),
     alertDetails: id => store.alertDetails(id),
     lastUpdated: () => store.lastUpdated(),
+    lastSync: () => store.lastSync(),
     alertsForLinesStations: (lines, stations) =>
       alertsForLinesStations(store.alerts(), lines, stations)
   }

@@ -27,6 +27,7 @@ const store = async ({ metroVarsClient }) => {
     alerts: () => alerts,
     alertCounts: () => calculateAlertCounts(),
     alertDetails: id => details.alerts[id],
+    lastSync: () => details.fetchDate,
     lastUpdated: () => details.releaseDate,
     stationsByLineName: () => metroVars.network || {},
     cityLoopStations: () => metroVars.cityLoopStations
