@@ -4,7 +4,7 @@ import './style.css'
 
 const AlertsBadge = ({ count, type }) => (
   <span className={`alert ${type} bordered radius-m`}>
-    {count || '?'}
+    {typeof (count) === 'number' ? count : '?'}
   </span>
 )
 
