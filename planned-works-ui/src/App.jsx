@@ -14,6 +14,7 @@ class App extends Component {
       alertCounts: {},
       lastUpdated: 'Unknown',
       alerts: [],
+      alertsForLinesStations: () => null,
       getAlertDetails: () => null,
       search: null,
       searchInfo: null,
@@ -35,9 +36,9 @@ class App extends Component {
         alertCounts: alertsManager.alertCounts(),
         // alerts: alertsManager.alerts(),
         getAlertDetails: alertsManager.alertDetails,
-        search: graph.domain.search.search
+        search: graph.domain.search.search,
+        alertsForLinesStations: alertsManager.alertsForLinesStations
       })
-
       this.loadQuerySearch()
     })
   }
@@ -54,6 +55,8 @@ class App extends Component {
     this.setState({ src: a, dst: b })
     const searchInfo = this.state.search(a, b)
     this.setState({ searchInfo })
+    const alerts = this.state.alertsForLinesStations(searchInfo.lines, searchInfo.stations)
+    this.setState({ alerts })
   }
 
   render () {

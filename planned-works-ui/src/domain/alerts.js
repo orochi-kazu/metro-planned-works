@@ -14,6 +14,31 @@ const convertAlerts = it => ({
   plannedWorks: it.planned_works_list
 })
 
+const alertsForLines = (alerts, lines) => alerts.filter(it => (lines || []).includes(it.line))
+
+const detailIdsForAlerts = alerts => Array.from(new Set(
+  alerts.flatMap(it => it.plannedWorks.flatMap(it => it.id))
+))
+
+const alertsFilteredByDetailIds = (alerts, detailIds) => alerts
+  // filter out unmatched alert ids
+  .map(lineAlert => ({
+    ...lineAlert,
+    plannedWorks: lineAlert.plannedWorks.filter(works => detailIds.includes(works.id))
+  }))
+  // filter out empty alerts
+  .filter(it => it.plannedWorks.length > 0)
+
+const alertsForLinesStations = (alerts, lines, stations) => {
+  // find alerts for all lines
+  const linesAlerts = alertsForLines(alerts, lines)
+  const detailIds = detailIdsForAlerts(linesAlerts)
+
+  // filter to alerts with intersection
+  const linesStationsAlerts = alertsFilteredByDetailIds(linesAlerts, detailIds)
+  return linesStationsAlerts
+}
+
 const alerts = async ({ healthboardClient, detailsClient, store }) => {
   const [healthboard, details] = await Promise.all([
     healthboardClient.fetch(),
@@ -27,8 +52,14 @@ const alerts = async ({ healthboardClient, detailsClient, store }) => {
     alerts: () => store.alerts(),
     alertCounts: () => store.alertCounts(),
     alertDetails: id => store.alertDetails(id),
-    lastUpdated: () => store.lastUpdated()
+    lastUpdated: () => store.lastUpdated(),
+    alertsForLinesStations: (lines, stations) =>
+      alertsForLinesStations(store.alerts(), lines, stations)
   }
 }
+const __test__ = {
+  alertsForLines,
+  detailIdsForAlerts
+}
 
-export { alerts }
+export { alerts, __test__ }

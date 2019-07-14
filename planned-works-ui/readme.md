@@ -17,11 +17,11 @@ The usual `npm install` and `npm start` :)
   - [ ] CI for test, build, and deploy
 
 - [ ] MVP Features
-  - [ ] Results list for search (by single-line start & end stations)
+  - [x] Results list for search (by single-line start & end stations)
     - [x] Load JSON file
     - [x] Search inputs
     - [x] Determine single-line station range
-    - [ ] Match alerts
+    - [x] Match alerts
     - [x] List alerts with links to source webpage
   - [x] Search query params, so people can share links
     - [x] Update query on submit

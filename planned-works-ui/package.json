@@ -35,7 +35,9 @@
       "fetch",
       "describe",
       "it",
-      "expect"
+      "expect",
+      "xdescribe",
+      "xit"
     ]
   },
   "browserslist": {
