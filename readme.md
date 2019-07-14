@@ -36,10 +36,10 @@ JSON and HTML. The manual bit is in converting free text in the HTML into canoni
 ## Product roadmap
 
 - [ ] MVP Features
-  - [ ] Results list for search (by single-line start & end stations)
+  - [x] Results list for search (by single-line start & end stations)
   - [ ] Calendar view of results
 - [ ] Stretch Features
-  - [ ] Indicator for pending alert ingestion
+  - [x] Indicator for pending alert ingestion
   - [ ] Automated detection of new alerts
   - [ ] Crowdsourced ingestion of new alerts
   - [ ] Summary of currently (un)affected lines
