@@ -48,14 +48,16 @@ class App extends Component {
   loadQuerySearch () {
     const params = new URL(window.location).searchParams
     const [src, dst] = ['src', 'dst'].map(it => params.get(it) || '')
-    if (src && dst) {
-      this.search(src, dst)
-    }
+    this.search(src, dst)
   }
 
-  search (a, b) {
-    this.setState({ src: a, dst: b })
-    const searchInfo = this.state.search(a, b)
+  search (src, dst) {
+    this.setState({ src, dst })
+    if (src === '' || dst === '') {
+      this.setState({ searchInfo: null, alerts: [] })
+      return
+    }
+    const searchInfo = this.state.search(src, dst)
     this.setState({ searchInfo })
     const alerts = this.state.alertsForLinesStations(searchInfo.lines, searchInfo.stations)
     this.setState({ alerts })
