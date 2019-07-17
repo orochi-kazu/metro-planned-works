@@ -6,9 +6,7 @@ form.search {
 input[type='text'].search {
   background-color: #222;
   border-color: #14cf00;
-
   color: white;
-  font-size: 1.3rem;
 }
 input[type='text'].search:-webkit-autofill,
 input[type='text'].search:-webkit-autofill:focus {
@@ -19,9 +17,7 @@ input[type='text'].search:-webkit-autofill:focus {
 input[type='submit'].search {
   background-color: #040;
   border-color: #14cf00;
-
   color: white;
-  font-size: 1.3rem;
 }
 
 /* wide */
@@ -37,6 +33,11 @@ input[type='submit'].search {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
+
+  input[type='text'].search,
+  input[type='submit'].search {
+    font-size: 1.3rem;
+  }
 }
 /* narrow */
 @media screen and (max-width: 35rem) {
@@ -50,6 +51,13 @@ input[type='submit'].search {
   .search.end {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+  }
+
+  input[type='text'].search,
+  input[type='submit'].search {
+    font-size: 2.2rem;
+    box-sizing:border-box;
+    width: 100%;
   }
 }
 .search.middle {
