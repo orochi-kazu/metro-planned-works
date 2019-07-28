@@ -968,6 +968,690 @@
         }
       ],
       "link": "https://www.metrotrains.com.au/planned-work/ctys-wer-290719-310719/"
+    },
+    {
+      "id": "289308",
+      "outages": [
+        {
+          "area": {
+            "desc": "between Watergardens and Sunbury",
+            "stations": ["Diggers Rest"]
+          },
+          "from": {
+            "desc": "1am Saturday",
+            "epoch": 0,
+            "iso": "2019-08-10T01:00"
+          },
+          "to": {
+            "desc": "last train Sunday",
+            "epoch": 0,
+            "iso": "2019-08-12T03:00"
+          }
+        }
+      ],
+      "link": "https://www.metrotrains.com.au/planned-work/br-wgs-suy-100819-110819/"
+    },
+    {
+      "id": "289635",
+      "outages": [
+        {
+          "area": {
+            "desc": "between North Melbourne and Sunshine",
+            "stations": ["Tottenham","West Footscray","Middle Footscray","Footscray","South Kensington"]
+          },
+          "from": {
+            "desc": "8.30pm",
+            "epoch": 0,
+            "iso": "2019-08-15T20:30"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-08-16T03:00"
+          }
+        }
+      ],
+      "link": "https://www.metrotrains.com.au/planned-work/br-nme-sun-150819/"
+    },
+    {
+      "id": "289652",
+      "outages": [
+        {
+          "area": {
+            "desc": "Between North Melbourne and Sunbury",
+            "stations": ["Sunbury","Diggers Rest","Watergardens","Keilor Plains","St Albans","Ginifer","Albion","Sunshine","Tottenham","West Footscray","Middle Footscray","Footscray","South Kensington"]
+          },
+          "from": {
+            "desc": "Saturday 17 August, 12.30am",
+            "epoch": 0,
+            "iso": "2019-08-17T00:30"
+          },
+          "to": {
+            "desc": "4.30am",
+            "epoch": 0,
+            "iso": "2019-08-17T04:30"
+          }
+        },
+        {
+          "area": {
+            "desc": "Between North Melbourne and Sunshine",
+            "stations": ["Tottenham","West Footscray","Middle Footscray","Footscray","South Kensington"]
+          },
+          "from": {
+            "desc": "4.30am Saturday 17 August",
+            "epoch": 0,
+            "iso": "2019-08-17T04:30"
+          },
+          "to": {
+            "desc": "11.45pm Sunday 18 August",
+            "epoch": 0,
+            "iso": "2019-08-18T23:45"
+          }
+        },
+        {
+          "area": {
+            "desc": "Between North Melbourne and Sunbury",
+            "stations": ["Sunbury","Diggers Rest","Watergardens","Keilor Plains","St Albans","Ginifer","Albion","Sunshine","Tottenham","West Footscray","Middle Footscray","Footscray","South Kensington"]
+          },
+          "from": {
+            "desc": "11.45pm",
+            "epoch": 0,
+            "iso": "2019-08-18T23:45"
+          },
+          "to": {
+            "desc": "last train, Sunday 18 August",
+            "epoch": 0,
+            "iso": "2019-08-19T03:00"
+          }
+        }
+      ],
+      "link": "https://www.metrotrains.com.au/planned-work/br-nme-sun-suy-170819-180819/"
+    },
+    {
+      "id": "289714",
+      "outages": [
+        {
+          "area": {
+            "desc": "between Blackburn and Belgrave",
+            "stations": ["Tecoma","Upwey","Upper Ferntree Gully","Ferntree Gully","Boronia","Bayswater","Heathmont","Ringwood","Heatherdale","Mitcham","Nunawading"]
+          },
+          "from": {
+            "desc": "8pm Monday 12 August",
+            "epoch": 0,
+            "iso": "2019-08-12T20:00"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-08-13T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "between Blackburn and Lilydale",
+            "stations": ["Mooroolbark","Croydon","Ringwood East","Ringwood","Heatherdale","Mitcham","Nunawading"]
+          },
+          "from": {
+            "desc": "8pm Monday 12 August",
+            "epoch": 0,
+            "iso": "2019-08-12T20:00"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-08-13T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "between Blackburn and Belgrave",
+            "stations": ["Tecoma","Upwey","Upper Ferntree Gully","Ferntree Gully","Boronia","Bayswater","Heathmont","Ringwood","Heatherdale","Mitcham","Nunawading"]
+          },
+          "from": {
+            "desc": "8pm Tuesday 13 August",
+            "epoch": 0,
+            "iso": "2019-08-13T20:00"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-08-14T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "between Blackburn and Lilydale",
+            "stations": ["Mooroolbark","Croydon","Ringwood East","Ringwood","Heatherdale","Mitcham","Nunawading"]
+          },
+          "from": {
+            "desc": "8pm Tuesday 13 August",
+            "epoch": 0,
+            "iso": "2019-08-13T20:00"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-08-14T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "between Blackburn and Belgrave",
+            "stations": ["Tecoma","Upwey","Upper Ferntree Gully","Ferntree Gully","Boronia","Bayswater","Heathmont","Ringwood","Heatherdale","Mitcham","Nunawading"]
+          },
+          "from": {
+            "desc": "8pm Wednesday 14 August",
+            "epoch": 0,
+            "iso": "2019-08-14T20:00"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-08-15T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "between Blackburn and Lilydale",
+            "stations": ["Mooroolbark","Croydon","Ringwood East","Ringwood","Heatherdale","Mitcham","Nunawading"]
+          },
+          "from": {
+            "desc": "8pm Wednesday 14 August",
+            "epoch": 0,
+            "iso": "2019-08-14T20:00"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-08-15T03:00"
+          }
+        }
+      ],
+      "link": "https://www.metrotrains.com.au/planned-work/buses-replace-trains-between-blackburn-belgrave-and-lilydale-monday-12-august-to-wednesday-14-august-each-night/"
+    },
+    {
+      "id": "289725",
+      "outages": [
+        {
+          "area": {
+            "desc": "Trains depart up to four minutes later than the normal timetable",
+            "stations": ["Belgrave","Tecoma","Upwey","Upper Ferntree Gully","Ferntree Gully","Boronia","Bayswater","Heathmont","Ringwood","Heatherdale","Mitcham","Nunawading","Blackburn","Laburnum","Box Hill","Mont Albert","Surrey Hills","Chatham","Canterbury","East Camberwell","Camberwell","Auburn","Glenferrie","Hawthorn","Burnley","East Richmond","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "9.05pm Sunday 28 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-28T21:05"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-07-29T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "Trains depart up to four minutes later than the normal timetable",
+            "stations": ["Lilydale","Mooroolbark","Croydon","Ringwood East","Ringwood","Heatherdale","Mitcham","Nunawading","Blackburn","Laburnum","Box Hill","Mont Albert","Surrey Hills","Chatham","Canterbury","East Camberwell","Camberwell","Auburn","Glenferrie","Hawthorn","Burnley","East Richmond","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "9.05pm Sunday 28 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-28T21:05"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-07-29T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "Trains depart up to four minutes later than the normal timetable",
+            "stations": ["Alamein","Ashburton","Burwood","Hartwell","Willison","Riversdale","Camberwell","Auburn","Glenferrie","Hawthorn","Burnley","East Richmond","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "9.05pm Sunday 28 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-28T21:05"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-07-29T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "Trains depart up to three minutes later than the normal timetable",
+            "stations": ["Glen Waverley","Syndal","Mount Waverley","Jordanville","Holmesglen","East Malvern","Darling","Glen Iris","Gardiner","Tooronga","Kooyong","Heyington","Burnley","East Richmond","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "9.05pm Sunday 28 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-28T21:05"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-07-29T03:00"
+          }
+        }
+      ],
+      "link": "https://www.metrotrains.com.au/planned-work/ctys-bel-lil-alm-gwy-280719/"
+    },
+    {
+      "id": "289730",
+      "outages": [
+        {
+          "area": {
+            "desc": "direct to and from Southern Cross Station",
+            "stations": ["Flagstaff","Melbourne Central","Parliament","Flinders Street"]
+          },
+          "from": {
+            "desc": "8.45pm Monday 29 July",
+            "epoch": 0,
+            "iso": "2019-07-29T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-07-30T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "direct to and from Southern Cross Station",
+            "stations": ["Flagstaff","Melbourne Central","Parliament","Flinders Street"]
+          },
+          "from": {
+            "desc": "8.45pm Tuesday 30 July",
+            "epoch": 0,
+            "iso": "2019-07-30T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-07-31T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "direct to and from Southern Cross Station",
+            "stations": ["Flagstaff","Melbourne Central","Parliament","Flinders Street"]
+          },
+          "from": {
+            "desc": "8.45pm Wednesday 31 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-31T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-08-01T03:00"
+          }
+        }
+      ],
+      "link": "https://www.metrotrains.com.au/planned-work/ctys-wer-290719/"
+    },
+    {
+      "id": "289762",
+      "outages": [
+        {
+          "area": {
+            "desc": "direct to and from Richmond Station, not via the City Loop",
+            "stations": ["Merinda Park","Lynbrook","Dandenong","Yarraman","Noble Park","Sandown Park","Springvale","Westall","Clayton","Huntingdale","Oakleigh","Hughesdale","Murrumbeena","Carnegie","Caulfield","Malvern","Armadale","Toorak","Hawksburn","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "8.45pm Sunday 28 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-28T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-07-29T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "direct to and from Richmond Station, not via the City Loop",
+            "stations": ["Merinda Park","Lynbrook","Dandenong","Yarraman","Noble Park","Sandown Park","Springvale","Westall","Clayton","Huntingdale","Oakleigh","Hughesdale","Murrumbeena","Carnegie","Caulfield","Malvern","Armadale","Toorak","Hawksburn","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "8.45pm Monday 29 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-29T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-07-30T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "direct to and from Richmond Station, not via the City Loop",
+            "stations": ["Merinda Park","Lynbrook","Dandenong","Yarraman","Noble Park","Sandown Park","Springvale","Westall","Clayton","Huntingdale","Oakleigh","Hughesdale","Murrumbeena","Carnegie","Caulfield","Malvern","Armadale","Toorak","Hawksburn","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "8.45pm Tuesday 30 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-30T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-07-31T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "direct to and from Richmond Station, not via the City Loop",
+            "stations": ["Merinda Park","Lynbrook","Dandenong","Yarraman","Noble Park","Sandown Park","Springvale","Westall","Clayton","Huntingdale","Oakleigh","Hughesdale","Murrumbeena","Carnegie","Caulfield","Malvern","Armadale","Toorak","Hawksburn","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "8.45pm Wednesday 31 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-31T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-08-01T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "direct to and from Richmond Station, not via the City Loop",
+            "stations": ["Cardinia Road","Officer","Beaconsfield","Berwick","Narre Warren","Hallam","Dandenong","Yarraman","Noble Park","Sandown Park","Springvale","Westall","Clayton","Huntingdale","Oakleigh","Hughesdale","Murrumbeena","Carnegie","Caulfield","Malvern","Armadale","Toorak","Hawksburn","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "8.45pm Sunday 28 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-28T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-07-29T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "direct to and from Richmond Station, not via the City Loop",
+            "stations": ["Cardinia Road","Officer","Beaconsfield","Berwick","Narre Warren","Hallam","Dandenong","Yarraman","Noble Park","Sandown Park","Springvale","Westall","Clayton","Huntingdale","Oakleigh","Hughesdale","Murrumbeena","Carnegie","Caulfield","Malvern","Armadale","Toorak","Hawksburn","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "8.45pm Monday 29 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-29T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-07-30T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "direct to and from Richmond Station, not via the City Loop",
+            "stations": ["Cardinia Road","Officer","Beaconsfield","Berwick","Narre Warren","Hallam","Dandenong","Yarraman","Noble Park","Sandown Park","Springvale","Westall","Clayton","Huntingdale","Oakleigh","Hughesdale","Murrumbeena","Carnegie","Caulfield","Malvern","Armadale","Toorak","Hawksburn","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "8.45pm Tuesday 30 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-30T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-07-31T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "direct to and from Richmond Station, not via the City Loop",
+            "stations": ["Cardinia Road","Officer","Beaconsfield","Berwick","Narre Warren","Hallam","Dandenong","Yarraman","Noble Park","Sandown Park","Springvale","Westall","Clayton","Huntingdale","Oakleigh","Hughesdale","Murrumbeena","Carnegie","Caulfield","Malvern","Armadale","Toorak","Hawksburn","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "8.45pm Wednesday 31 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-31T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-08-01T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "direct to and from Richmond Station, not via the City Loop",
+            "stations": ["Kananook","Seaford","Carrum","Bonbeach","Chelsea","Edithvale","Aspendale","Mordialloc","Parkdale","Mentone","Cheltenham","Southland","Highett","Moorabbin","Patterson","Bentleigh","McKinnon","Ormond","Glenhuntly","Caulfield","Malvern","Armadale","Toorak","Hawksburn","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "8.45pm Sunday 28 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-28T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-07-29T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "direct to and from Richmond Station, not via the City Loop",
+            "stations": ["Kananook","Seaford","Carrum","Bonbeach","Chelsea","Edithvale","Aspendale","Mordialloc","Parkdale","Mentone","Cheltenham","Southland","Highett","Moorabbin","Patterson","Bentleigh","McKinnon","Ormond","Glenhuntly","Caulfield","Malvern","Armadale","Toorak","Hawksburn","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "8.45pm Monday 29 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-29T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-07-30T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "direct to and from Richmond Station, not via the City Loop",
+            "stations": ["Kananook","Seaford","Carrum","Bonbeach","Chelsea","Edithvale","Aspendale","Mordialloc","Parkdale","Mentone","Cheltenham","Southland","Highett","Moorabbin","Patterson","Bentleigh","McKinnon","Ormond","Glenhuntly","Caulfield","Malvern","Armadale","Toorak","Hawksburn","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "8.45pm Tuesday 30 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-30T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-07-31T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "direct to and from Richmond Station, not via the City Loop",
+            "stations": ["Kananook","Seaford","Carrum","Bonbeach","Chelsea","Edithvale","Aspendale","Mordialloc","Parkdale","Mentone","Cheltenham","Southland","Highett","Moorabbin","Patterson","Bentleigh","McKinnon","Ormond","Glenhuntly","Caulfield","Malvern","Armadale","Toorak","Hawksburn","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "8.45pm Wednesday 31 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-31T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-08-01T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "Buses replace trains between South Yarra and Sandringham",
+            "stations": ["Hampton","Brighton Beach","Middle Brighton","North Brighton","Gardenvale","Elsternwick","Ripponlea","Balaclava","Windsor","Prahran","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "8.45pm Sunday 28 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-28T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-07-29T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "Buses replace trains between South Yarra and Sandringham",
+            "stations": ["Hampton","Brighton Beach","Middle Brighton","North Brighton","Gardenvale","Elsternwick","Ripponlea","Balaclava","Windsor","Prahran","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "8.45pm Monday 29 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-29T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-07-30T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "Buses replace trains between South Yarra and Sandringham",
+            "stations": ["Hampton","Brighton Beach","Middle Brighton","North Brighton","Gardenvale","Elsternwick","Ripponlea","Balaclava","Windsor","Prahran","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "8.45pm Tuesday 30 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-30T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-07-31T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "Buses replace trains between South Yarra and Sandringham",
+            "stations": ["Hampton","Brighton Beach","Middle Brighton","North Brighton","Gardenvale","Elsternwick","Ripponlea","Balaclava","Windsor","Prahran","South Yarra","Richmond","Flinders Street","Southern Cross","Flagstaff","Melbourne Central","Parliament"]
+          },
+          "from": {
+            "desc": "8.45pm Wednesday 31 July 2019",
+            "epoch": 0,
+            "iso": "2019-07-31T20:45"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-08-01T03:00"
+          }
+        }
+      ],
+      "link": "https://www.metrotrains.com.au/planned-work/ctys-cbe-pkm-fkn-shm-290719-310719/"
+    },
+    {
+      "id": "289811",
+      "outages": [
+        {
+          "area": {
+            "desc": "between North Melbourne and Werribee",
+            "stations": ["Hoppers Crossing","Williams Landing","Aircraft","Laverton","Westona","Altona","Seaholme","Newport","Spotswood","Yarraville","Seddon","Footscray","South Kensington"]
+          },
+          "from": {
+            "desc": "11.15pm Tuesday 13 August 2019",
+            "epoch": 0,
+            "iso": "2019-08-13T23:15"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-08-14T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "between North Melbourne and Williamstown",
+            "stations": ["Williamstown Beach","North Williamstown","Newport","Spotswood","Yarraville","Seddon","Footscray","South Kensington"]
+          },
+          "from": {
+            "desc": "11.15pm Tuesday 13 August 2019",
+            "epoch": 0,
+            "iso": "2019-08-13T23:15"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-08-14T03:00"
+          }
+        }
+      ],
+      "link": "https://www.metrotrains.com.au/planned-work/br-nme-wer-wil-130819/"
+    },
+    {
+      "id": "289818",
+      "outages": [
+        {
+          "area": {
+            "desc": "between North Melbourne and Werribee",
+            "stations": ["Hoppers Crossing","Williams Landing","Aircraft","Laverton","Westona","Altona","Seaholme","Newport","Spotswood","Yarraville","Seddon","Footscray","South Kensington"]
+          },
+          "from": {
+            "desc": "11.15pm Thursday 29 August 2019",
+            "epoch": 0,
+            "iso": "2019-08-29T23:15"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-08-30T03:00"
+          }
+        },
+        {
+          "area": {
+            "desc": "between North Melbourne and Williamstown",
+            "stations": ["Williamstown Beach","North Williamstown","Newport","Spotswood","Yarraville","Seddon","Footscray","South Kensington"]
+          },
+          "from": {
+            "desc": "11.15pm Thursday 29 August 2019",
+            "epoch": 0,
+            "iso": "2019-08-29T23:15"
+          },
+          "to": {
+            "desc": "last train",
+            "epoch": 0,
+            "iso": "2019-08-30T03:00"
+          }
+        }
+      ],
+      "link": "https://www.metrotrains.com.au/planned-work/br-nme-wer-wil-290819/"
+    },
+    {
+      "id": "290271",
+      "outages": [
+        {
+          "area": {
+            "desc": "between South Yarra and Elsternwick",
+            "stations": ["Ripponlea","Balaclava","Windsor","Prahran"]
+          },
+          "from": {
+            "desc": "8.30pm Friday",
+            "epoch": 0,
+            "iso": "2019-08-16T20:30"
+          },
+          "to": {
+            "desc": "last train Sunday",
+            "epoch": 0,
+            "iso": "2019-08-19T03:00"
+          }
+        }
+      ],
+      "link": "https://www.metrotrains.com.au/planned-work/br-sya-els-160819-180819/"
     }
   ]
 }
